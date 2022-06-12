@@ -11,6 +11,7 @@ import numpy as np
 
 import torch
 from tensorboardX import SummaryWriter
+import visualization_utils
 
 from options import args_parser
 from update import LocalUpdate, test_inference
