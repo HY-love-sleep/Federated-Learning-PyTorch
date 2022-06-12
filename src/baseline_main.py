@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 # Python version: 3.6
 
-
-from tqdm import tqdm
+import visualization_utils
 import matplotlib.pyplot as plt
 
 import torch
@@ -62,7 +61,7 @@ if __name__ == '__main__':
     criterion = torch.nn.NLLLoss().to(device)
     epoch_loss = []
 
-    for epoch in tqdm(range(args.epochs)):
+    for epoch in range(args.epochs):
         batch_loss = []
 
         for batch_idx, (images, labels) in enumerate(trainloader):
