@@ -1,26 +1,7 @@
 # dlg 结合 Fmnist
-import os
-import copy
-import time
-import pickle
-import numpy as np
-
-import torch
-from tensorboardX import SummaryWriter
-import visualization_utils
 
 from options import args_parser
-from update import LocalUpdate, test_inference
-from models import MLP, CNNMnist, CNNFashion_Mnist, CNNCifar
-from utils import get_dataset, average_weights, exp_details
 
-import argparse
-import numpy as np
-from pprint import pprint
-
-import visualization_utils
-
-from PIL import Image
 import matplotlib.pyplot as plt
 
 import torch
